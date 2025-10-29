@@ -42,5 +42,24 @@
             print(names); // [Bob, Alice, Charlie]
             //查找第一个满足条件的元素
             var firstLongName = names.firstWhere((name)=>name.length>4);
+### 异步
+- 🎯 核心概念速览
+  - 三种异步处理方式
+    ```dart
+    //Future+then(基础)
+    Future<String> fetchData(){
+        return Future.delayed(Duration(seconds:1),()=>'数据源');
+    }
+    //aync/await
+    Future<void> fetchData() async {
+        String data  = await fetchDatas();
+    }
+    //Stream(数据流)
+    Stream<int> countStream() async *{
+        for(int i=1;i<=5;i++){
+            await Future.delayed(Duration(seconds:1));
+            yield i;
+        }
+    }
 
 
