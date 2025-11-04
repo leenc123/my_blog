@@ -11,3 +11,9 @@
 ```git checkout -b feature/你的功能描述 upstream/develop```
 ## 需要显式设置推送到你的fork仓库
 ```git push -u origin feature/chat-integration```
+# 删除远程develop分支
+```git push origin --delete develop```
+# 删除本地develop分支
+```git branch -d develop```
+# 或者强制删除
+```git branch -D develop```
