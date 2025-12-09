@@ -3,6 +3,7 @@
  - 创建虚拟环境```python3 -m venv venv ```
  - 激活虚拟环境```source venv/bin/activate```
  - 停止虚拟环境```deactivate```
+ - 直接从路径安装```pip install /usr/src/wiringOP-Python```
 ##  systemd 启用和管理服务
  - 编辑自启动脚本```sudo nano /etc/systemd/system/my-python-app.service```
     
